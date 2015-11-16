@@ -93,7 +93,7 @@
                delimited by size sis-codigo 
                delimited by size into lnk-mensagem
            else
-               string "Registro não Alterado. Erro: "
+               string "Não foi possível alterar o Registro.Erro: "
                delimited by size ws-file-status
                delimited by size into lnk-mensagem
            end-if.
