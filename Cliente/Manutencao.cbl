@@ -65,7 +65,7 @@
                delimited by size sis-codigo 
                delimited by size into lnk-mensagem
            else
-               string "Registro n„o Cadastrado. Erro: "
+               string "Registro n√£o Cadastrado. Erro: "
                delimited by size ws-file-status
                delimited by size into lnk-mensagem
            end-if.
@@ -75,7 +75,7 @@
            move lnk-dados to sis-dados
            read sis-file key is sis-codigo
            if ws-file-status equal '23'
-               string "Registro n„o Encontrado!"
+               string "Registro n√£o Encontrado!"
                delimited by size into lnk-mensagem
            else
                move sis-dados to lnk-dados
@@ -93,7 +93,7 @@
                delimited by size sis-codigo 
                delimited by size into lnk-mensagem
            else
-               string "Registro n„o Alterado. Erro: "
+               string "N√£o foi poss√≠vel alterar o Registro. Erro: "
                delimited by size ws-file-status
                delimited by size into lnk-mensagem
            end-if.
