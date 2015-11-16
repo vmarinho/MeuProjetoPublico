@@ -60,7 +60,7 @@
            move lnk-dados to sis-dados
            write sis-dados
            if ws-file-1 equal '0'
-               string "Registro Cadastrado com Sucesso na Base de Dados!"
+               string "Registro Cadastrado com Sucesso na Base!"
                delimited by size " Codigo : "
                delimited by size sis-codigo 
                delimited by size into lnk-mensagem
